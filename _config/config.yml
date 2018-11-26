@@ -1,0 +1,15 @@
+---
+Name: custom-filesystem-config
+After:
+  - "assetsflysystem"
+---
+SilverStripe\Assets\Flysystem\AssetAdapter:
+  asset_path: 'assets'
+
+SilverStripe\Core\Injector\Injector:
+  # Define the default adapter for this filesystem
+  SilverStripe\Assets\Flysystem\PublicAdapter:
+    class: ilateral\SilverStripe\CustomFilesystem\PublicAssetAdapter
+  # Define the secondary adapter for protected assets
+  SilverStripe\Assets\Flysystem\ProtectedAdapter:
+    class: ilateral\SilverStripe\CustomFilesystem\ProtectedAssetAdapter
