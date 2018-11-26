@@ -1,0 +1,38 @@
+{
+  "name": "i-lateral/silverstripe-custom-filesystem",
+  "description": "Customised filesystem adaptor that allows changing of assets location",
+    "type": "silverstripe-vendormodule",
+    "homepage": "https://github.com/i-lateral/silverstripe-custom-filesystem",
+    "keywords": [
+        "silverstripe",
+        "assets"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Morven Lewis-Everley",
+            "email": "morven@ilateral.co.uk"
+        },
+        {
+            "name": "Mark Anderson",
+            "email": "mark@ilateral.co.uk"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/i-lateral/silverstripe-custom-filesystem/issues"
+    },
+    "require": {
+        "silverstripe/framework": "~4.0",
+        "silverstripe/assets": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ilateral\\SilverStripe\\CustomFilesystem\\": "src/",
+            "ilateral\\SilverStripe\\CustomFilesystem\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
